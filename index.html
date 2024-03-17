@@ -25,21 +25,33 @@
 
         // No Argument and no return
 
-        const length = 25;
-        const breath = 20;
+        const length1 = 25;
+        const breath1 = 20;
 
-        function calculateAreaOfRectangle()
+        function calculateAreaOfRectangle1()
         {
-            const area = length*breath;
-            console.log(`Area of a Rectangle is ${area}`)
+            const area1 = length1*breath1;
+            console.log(`Area of a Rectangle is ${area1}`)
         }
 
-        calculateAreaOfRectangle();
+        calculateAreaOfRectangle1();
 
 
 
 
-        // 
+        // No Argument but Return
+
+        const length2 = 30;
+        const breath2 = 10;
+
+        function calculateAreaOfRectangle2()
+        {
+            const area2 = length2*breath2;
+            return area2;
+        }
+
+        const AreaOfRectangle=calculateAreaOfRectangle2();
+        console.log(`Area of a Rectangle is ${AreaOfRectangle}`);
 
 
 
