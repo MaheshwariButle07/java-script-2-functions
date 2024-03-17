@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Functions and categories of the Function</title>
 </head>
+
 <body>
 
     <script>
 
         // This Function Calculates the Area of the circle.
 
-        function calculateAreaOfCircle(radius,pi=3.14)
         {
-           const area = pi*radius*radius;
-           console.log(`Area of a circle is ${area}`);
-        }
 
-        calculateAreaOfCircle(5);
+            function calculateAreaOfCircle(radius, pi = 3.14) {
+
+                const area = pi * radius * radius;
+                console.log(`Area of a circle is ${area}`);
+
+            }
+
+            calculateAreaOfCircle(5);
+
+        }
 
 
 
@@ -25,38 +32,67 @@
 
         // No Argument and no return
 
-        const length1 = 25;
-        const breath1 = 20;
-
-        function calculateAreaOfRectangle1()
         {
-            const area1 = length1*breath1;
-            console.log(`Area of a Rectangle is ${area1}`)
-        }
 
-        calculateAreaOfRectangle1();
+            const length1 = 25;
+            const breath1 = 20;
+
+            function calculateAreaOfRectangle1() {
+                const area1 = length1 * breath1;
+                console.log(`Area of a Rectangle with  No Argument and no return is ${area1}`)
+            }
+
+            calculateAreaOfRectangle1();
+
+        }
 
 
 
 
         // No Argument but Return
 
-        const length2 = 30;
-        const breath2 = 10;
-
-        function calculateAreaOfRectangle2()
         {
-            const area2 = length2*breath2;
-            return area2;
+
+            const length = 30;
+            const breath = 10;
+
+            function calculateAreaOfRectangle2() {
+                const area = length * breath;
+                return area;
+            }
+
+            const AreaOfRectangle = calculateAreaOfRectangle2();
+            console.log(`Area of a Rectangle with No Argument but Return is ${AreaOfRectangle}`);
+
         }
 
-        const AreaOfRectangle=calculateAreaOfRectangle2();
-        console.log(`Area of a Rectangle is ${AreaOfRectangle}`);
+
+
+
+        // Argument but No Return
+        {
+
+            function calculateAreaOfRectangle3(length, breath) 
+            {
+                const area = length * breath;
+                console.log(`Area of a Rectangle with Argument but No Return is ${area}`);
+
+            }
+
+            calculateAreaOfRectangle3(35, 8);
+        }
+
+
+
+       
+
+
 
 
 
 
     </script>
-    
+
 </body>
+
 </html>
